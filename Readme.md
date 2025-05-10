@@ -39,7 +39,8 @@ Il s'agit entièrement de SQL et ces fichiers de codes  comporte de **nombreuses
 ├── requetes_finales.sql
 └── README.md
 
-# Schéma Mermaid
+# Schéma final de base de données comme Mermaid
+
 ![Schéma Mermaid - logique projet](1.But%20du%20projet%20et%20logique%20algorithmique%20et%20%C3%A9conomique/Editor%20_%20Mermaid%20Chart-2025-05-09-195530.png)
 
 
