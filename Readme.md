@@ -17,11 +17,53 @@ Il s'agit entièrement de SQL et ces fichiers de codes  comporte de nombreuses r
 
 
 # Installation et démarrage
-L'ensemble du schéma et de la logique algorithmique est détaillée dans le PDF. 
 
-1.Lancer le script de création de base de donnée : schema.sql
-2.Repérer l'endroit où la database est créée /reprendre celle donnée 
-3.Télécharger et lancer le fichire de requêtes de SQL: et utilisez "use database "sous SQLite . 
-4. Visualiser les résultats grâce à sqlite viewer. 
+# 📊 Projet SQL - Santé et Économie
+
+Ce projet explore la relation entre les **habitudes de santé** des employés et leur **productivité économique**, via une modélisation complète en SQL et une simulation de données.
+
+---
+
+## 📄 PDF de Création de la Base de Données
+
+Ce document présente la structure conceptuelle et logique du projet :
+
+1. **Choix des variables et des clés étrangères :**  
+   Chaque champ a été conçu pour refléter des comportements réels. Les **clés étrangères** garantissent la cohérence relationnelle entre les entités (employé·e, entreprise, applications, effets...).
+
+2. **Division de la table `APPLICATION` en deux entités :**  
+   - `APPLICATION_CAUSE` pour les événements déclencheurs.
+   - `APPLICATION_EFFECT` pour les conséquences observées.  
+   Cette séparation facilite les analyses "cause → effet" et renforce la clarté structurelle.
+
+3. **Typologie des liens et codification relationnelle :**  
+   - Relations 1:N, contraintes d’intégrité référentielle.
+   - Utilisation de `CHECK` pour les valeurs booléennes (0/1).
+   - Indexation des clés étrangères pour optimiser les performances.
+
+---
+
+## 🧭 Schéma Mermaid
+
+Le schéma ci-dessous illustre toutes les relations entre les tables du projet.  
+La division en applications de cause et d’effet rend la **structure plus lisible** malgré ses 20+ tables.
+
+> 🔍 **Conseil :** Zoomez pour une meilleure lecture.
+
+<p align="center">
+  <img src="1.But%20du%20projet%20et%20logique%20algorithmique%20et%20%C3%A9conomique/Editor%20_%20Mermaid%20Chart-2025-05-09-195530.png" alt="Schéma Mermaid" width="800"/>
+</p>
+
+---
+
+## 🚀 Installation et cémarrage
+L’ensemble du **schéma relationnel** et de la **logique algorithmique** est détaillé dans le fichier PDF.
+
+### 🧾 Étapes :
+
+1. **Lancer le script de création de la base de données :**
+
+   ```bash
+   sqlite3 projet_sql_sante_economie.db < schema.sql
 
 
