@@ -1,3 +1,9 @@
+
+# PDF de création de base de donnée
 1.Fichier d'explications du choix de variables et de clé étrangères ! 
 2. Explication de la division de la table applications en 2 : une sur les causes,puis l'autre sur les effets, afin de renforcer la logique relationnelle. 
 3. Explication des types de liens et codification par la suite dans le schéma . 
+
+#Schéma Mermaid
+Il permet de mettre en avant les différentes relations. La modification de la table d'applications par division a permis une plus grande lisibilité de ce schéma ! 
+Je vous invite fortement à zoomer : il contient plus d'une vingtaine de tables, afin d'améliorer la qualité de la lecture ! 
