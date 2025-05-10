@@ -1290,7 +1290,7 @@ FROM (
   OFFSET (SELECT (COUNT(*)-1)/2 FROM EFFETS_RISQUE)
 );
 
-3.Corrélation risque et temps horaire moyen ! 
+--3.Corrélation risque et temps horaire moyen !-- 
 SELECT
   ROUND(
     SUM((r.ceinture_pourcentage - stats.avg_c) * (er.temps_horaire_moyenne - stats.avg_t)) /
@@ -1373,13 +1373,6 @@ SELECT
     AS q3_rep
 FROM rep;
 
-
--- 12) Temps horaire moyen vs impact PIB (corrélation)
-SELECT
-  ROUND(CORR(er.temps_horaire_moyenne, er.impact_PIB_par_habitant),4)
-    AS corr_temps_PIB
-FROM EFFETS_RISQUE er;
-
 -- 13) Entreprise : impact PIB moyen lié aux risques
 SELECT
   em.id_entreprise,
@@ -1420,7 +1413,6 @@ FROM (
 )
 ORDER BY moy_impact_PIB_risque ASC
 LIMIT 1;
-
 
 -- 12. Temps moyen de travail horaire enregistré (RISQUE)
 SELECT 
@@ -1554,8 +1546,6 @@ ORDER BY trimestre;
 
 
 --Partie 8: corrélations --
-.load ./stat
-.load ./stat
 --1.Corrélation ceintures pourcentages et temps horaire moyen--
 --elle est au carré, il suffit alors de déterminer le r =corrélation par la racine!--
 
