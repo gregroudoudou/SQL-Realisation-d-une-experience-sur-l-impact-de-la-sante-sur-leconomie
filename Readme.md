@@ -1,8 +1,11 @@
 # But
-Ce projet est réalisé dans le cadre d'un cours de SQL de Kévin Michoud. Il a pour but d'évaluer la façon dont des décision de  santé peuvent avoir un impact sur la productivité de l'entreprise, approximé par ses bénéfices ; et sur le PIB, qui est directement calculé par l'application de saisie en fonction des facteurs de santé. 
-Ce dernier reposerait alors sur l'évalution moyenne de l'impact sur le PIB, en fonction donc de l'impact de la décision de santé sur le temps de travail ; et de la qualité du travail, grâce aux entrées données par sa hierarchie ou le manager. 
+Ce projet est réalisé dans le cadre d'un cours de SQL de **Kévin Michoud(FSEG).** et donc l'unique auteur est **Grégoire Fuchs**.
 
-Ce projet est donc forcément ardu à mettre en place ; mais est  aussi novateur ; il repose donc sur la simulation aléatoire de nombres , afin de créer des données ; car elles seraient difficilement obtenues en France et en Europe en raison de la RGPD. 
+Il a pour but d'évaluer la façon dont des **décision de  santé** peuvent avoir un impact sur la productivité de **l'entreprise**, approximé par ses bénéfices ; et sur le PIB, qui est directement calculé par l'application de saisie en fonction des facteurs de santé. 
+
+Ce dernier reposerait alors sur l'**évalution moyenne de l'impact sur le PIB**, en fonction donc de l'impact de la décision de santé sur le temps de travail ; et de la qualité du travail, grâce aux entrées données par sa hierarchie ou le manager. 
+
+Ce projet est donc forcément ardu à mettre en place ; mais est  aussi **novateur** ; il repose donc sur la simulation aléatoire de nombres , afin de créer des données ; car elles seraient difficilement obtenues en France et en Europe en raison de la RGPD. 
 
 # Prérequis 
 Notamment, ce fichier a été réalisé sous le gestionnaire Sqlite 3 , et fonctionne donc sous cette version. 
