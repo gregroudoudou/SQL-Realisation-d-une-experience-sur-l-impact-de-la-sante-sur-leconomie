@@ -1,7 +1,7 @@
-
+--Partie 1:Création du Schéma
 
 -- Je commence la définition du schéma SQLite de la base de données avec les clés étrangères activées
- .open projet_sql_sante_economie.db 
+ .open projet_sql_sante_economie.db --c'est le nom de la base de donnée donnée!
 PRAGMA foreign_keys = ON;
 PRAGMA database_list;
 
@@ -293,8 +293,11 @@ JOIN EFFETS_SPORT f ON s.id_sport = f.id_sport;
 .tables
 
 
+------------------------------------
+---PARTIE 2: simulation ------------
+------------------------------------
 
----PARTIE 2: simulation --
+
 
 --il faut alors charger la base de donnée nommée au début de ce fichier ! Utilisez alors "projetsante.sql"!--
 
@@ -302,7 +305,7 @@ JOIN EFFETS_SPORT f ON s.id_sport = f.id_sport;
 BEGIN;
 PRAGMA foreign_keys = OFF;
 
--- 1) Table temporaire pour 300 ID via CTE récursive
+-- 1) Table temporaire aidant à simuler aléatoirement.   
 CREATE TEMPORARY TABLE temp_ids(id INTEGER PRIMARY KEY);
 WITH RECURSIVE seq(x) AS (
     SELECT 1
@@ -311,7 +314,7 @@ WITH RECURSIVE seq(x) AS (
 )
 INSERT INTO temp_ids(id) SELECT x FROM seq;
 
--- 2) Employeurs (300 enregistrements)
+-- 2) Employeurs 
 INSERT INTO EMPLOYEUR(nom, nom_manager, benefices, heures, benefices_par_heure)
 SELECT
   'Entreprise_' || id,
@@ -321,7 +324,7 @@ SELECT
   ROUND((ABS(RANDOM()) % 5000) + 50,     2)
 FROM temp_ids;
 
--- 3) Employés (300 enregistrements)
+-- 3) Employés 
 INSERT INTO EMPLOYE(nom, prenom, id_entreprise, salaire)
 SELECT
   'Nom_'    || id,
