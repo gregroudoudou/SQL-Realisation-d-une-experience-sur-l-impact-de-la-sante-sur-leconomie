@@ -13,6 +13,7 @@ Notamment, ce fichier a été réalisé sous le gestionnaire Sqlite 3 , et fonct
 Il s'agit entièrement de SQL et ces fichiers de codes  comporte de nombreuses requêtes  utiles pour le projet et avancées; et donc certaines sont déjà expliquées lors du PDF;puis en commentaires du SQLite. 
 
 # Schéma Mermaid
+![Schéma Mermaid - logique projet](1.But%20du%20projet%20et%20logique%20algorithmique%20et%20%C3%A9conomique/Editor%20_%20Mermaid%20Chart-2025-05-09-195530.png)
 
 
 # Installation et démarrage
