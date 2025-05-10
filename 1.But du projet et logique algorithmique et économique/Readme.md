@@ -1,4 +1,4 @@
-# 📄 PDF de Création de la Base de Données
+#  PDF de création de la base de données et de l'analyse des requêtes.
 
 Ce document présente la structure conceptuelle et logique du projet **SQL - Santé et Économie**, à travers plusieurs points clés :
 
